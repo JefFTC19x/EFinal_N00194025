@@ -1,0 +1,972 @@
+{
+  "id": "8721ce77-2d9f-4ea8-853a-621db97c4bd9",
+  "version": "2.0",
+  "name": "PruebasSeleniun",
+  "url": "https://localhost:5001/",
+  "tests": [{
+    "id": "884e6dc5-b48a-41e3-a7ac-e1dcf74bccc2",
+    "name": "ACrearCuentaPropia",
+    "commands": [{
+      "id": "48557665-bb4f-49ef-9f32-7926353d0a42",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a187339c-5cd0-418c-aa63-85b6826b069d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "807ec13e-d112-487a-8406-25c1d24f8572",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Cuenta",
+      "targets": [
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Crear')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "248bf788-e032-4c7c-a726-c116fcf051e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1005683-2c2d-4ac1-b154-382877b5fc4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CARTERA"
+    }, {
+      "id": "ba4c8e44-14d0-451a-837b-43d950d4eb9f",
+      "comment": "",
+      "command": "select",
+      "target": "id=Categoria",
+      "targets": [],
+      "value": "label=Propia"
+    }, {
+      "id": "1ff4d92e-e9cb-4a08-83b8-9b660d54b3ff",
+      "comment": "",
+      "command": "select",
+      "target": "id=Moneda",
+      "targets": [],
+      "value": "label=Soles"
+    }, {
+      "id": "8673dcd8-d115-449e-a30b-2b8b63b8527f",
+      "comment": "",
+      "command": "type",
+      "target": "id=SaldoInicial",
+      "targets": [
+        ["id=SaldoInicial", "id"],
+        ["name=Saldo", "name"],
+        ["css=#SaldoInicial", "css:finder"],
+        ["xpath=//input[@id='SaldoInicial']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "0b7c6cab-4b1d-49e0-aa55-7f6dcb02401f",
+      "comment": "",
+      "command": "click",
+      "target": "id=GuardarCuenta",
+      "targets": [
+        ["id=GuardarCuenta", "id"],
+        ["css=#GuardarCuenta", "css:finder"],
+        ["xpath=//button[@id='GuardarCuenta']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "43cb6fc3-cde1-41e7-b230-93adc4f564d1",
+    "name": "ACrearCuentaCredito",
+    "commands": [{
+      "id": "3f12ef33-d99f-45da-9bc2-592dcc68481d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d37b5557-2699-4d98-a2e4-204121f235a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a78f608-4374-4199-bb63-7daf7ca456cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Cuenta",
+      "targets": [
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Crear')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd21fd49-ed2a-4e95-ba66-c19222d05b0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59f01c0f-ead0-4ef2-b65b-e74627630c6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CREDITO BICICLETA"
+    }, {
+      "id": "940a8615-c333-4874-ada0-9e579321f270",
+      "comment": "",
+      "command": "select",
+      "target": "id=Categoria",
+      "targets": [],
+      "value": "label=Crédito"
+    }, {
+      "id": "78c085b2-2373-4602-b4e1-d09dc9b09f91",
+      "comment": "",
+      "command": "select",
+      "target": "id=Moneda",
+      "targets": [],
+      "value": "label=Dolares"
+    }, {
+      "id": "9fe9027d-6e52-48cf-9623-6962bb2d3ef1",
+      "comment": "",
+      "command": "type",
+      "target": "id=SaldoInicial",
+      "targets": [
+        ["id=SaldoInicial", "id"],
+        ["name=Saldo", "name"],
+        ["css=#SaldoInicial", "css:finder"],
+        ["xpath=//input[@id='SaldoInicial']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "1e17b897-c190-4565-8cfb-5573b6aa7a86",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=SaldoInicial",
+      "targets": [
+        ["id=SaldoInicial", "id"],
+        ["name=Saldo", "name"],
+        ["css=#SaldoInicial", "css:finder"],
+        ["xpath=//input[@id='SaldoInicial']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "0e7fb54b-58f4-4202-aa8b-03d47b6403f3",
+    "name": "AgregarIngresoSoles",
+    "commands": [{
+      "id": "a408b573-4ca0-4ef9-8f02-b71d3f1f0c28",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21df9081-b6fb-4543-bd80-0f52e1339bf2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac5be4c4-4d36-4939-a950-d25334dd7751",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Ingreso",
+      "targets": [
+        ["linkText=Registrar Ingreso", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Ingreso')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Ingresar')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Ingreso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebbc94b7-f3e0-4089-9281-9c4c28298c0b",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6267cf3e-4df1-42cf-a442-e774fdfbb737",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=BILLETERA"
+    }, {
+      "id": "57636297-cdea-4869-899f-9923ff5a2cd9",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a208e6-8eed-45dc-b9bd-7a483569d345",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AHORROS PARA BICI NUEVA"
+    }, {
+      "id": "1e409bf2-84aa-4f39-bb87-dc6bc71e8eb2",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "002eb427-1bd1-414e-a6b8-935f9adcf566",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc95b85a-2600-4ee5-a119-fdd0d0e521b0",
+    "name": "AgregarIngresoDolares",
+    "commands": [{
+      "id": "d67932ce-b484-4c64-b176-b69611f7b048",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccc66f43-3b1f-4bb2-a1c7-8f603dba3e14",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39287500-272a-4fd8-9937-53562d3ed479",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Ingreso",
+      "targets": [
+        ["linkText=Registrar Ingreso", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Ingreso')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Ingresar')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Ingreso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd49587e-6db1-4767-b0e9-93c40331db0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa03395b-a030-4c15-8539-ac0c30c0a474",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=CREDITO COMPUTADORA"
+    }, {
+      "id": "1d3f7baa-726c-40d2-8518-93a40c98992d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e68f4cc3-6e9c-4f91-9eed-c7d066b9d3e3",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ABONO PARA PAGAR BICI"
+    }, {
+      "id": "b5ea62d2-f24d-4c29-a50f-79efd6fa7476",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "350"
+    }, {
+      "id": "55efdef4-2608-45e8-a2d5-55b85128209d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c3a21dc4-f0be-4741-a689-c21c04615b7e",
+    "name": "AgregarGastoSoles",
+    "commands": [{
+      "id": "3d543b26-1e42-48a1-96b8-86cca803fa5d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dee1bee-a96e-4cd3-8c64-d8cd7d4b2f52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b333cd1-3394-41c4-9963-034fc799b3d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Gasto",
+      "targets": [
+        ["linkText=Registrar Gasto", "linkText"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Gasto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Gastar')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Gasto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f2ec5c-1ab4-4b49-a2b7-abba3f297e72",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24352233-9b5f-497d-bd38-1e40051c6c40",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=BILLETERA"
+    }, {
+      "id": "21e43618-6203-46d1-a7dd-16b858c73f8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb855fb3-5634-4019-ad66-898118e659fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "COMPRAMOS BICICLETA DE MONTAÑA"
+    }, {
+      "id": "283affbf-125a-4017-b244-2ab3f70991a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "804cb010-2a7b-48f4-93f1-dfd968e8dfed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f6fe4d8f-5028-4d51-9742-bfd489b1bf64",
+    "name": "AgregarGastoDolares",
+    "commands": [{
+      "id": "a44de8f7-255e-488b-ad1c-5f3ebf39437f",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "129c76d2-0e4b-4c6c-8a1c-8c7c04461a34",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1871cdc4-8fa1-497f-bd08-38ceeebb3040",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Gasto",
+      "targets": [
+        ["linkText=Registrar Gasto", "linkText"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Gasto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Gastar')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Gasto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "652f5ca0-8daa-46ae-89e3-c0a4a254ba98",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a086cf4a-ee0d-437b-9ea1-c1b7c0855d3e",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=CREDITO BICICLETA"
+    }, {
+      "id": "6044073f-e956-4979-8ff9-63fcf06658e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3d69843-3a32-4987-97ba-144387231584",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CAMBIO DE PIEZAS Y FRENOS BICI"
+    }, {
+      "id": "95059180-153b-4bdc-b1a5-832846d3dbfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "244f38a4-4e98-41e2-bd4d-cad3539de182",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bde5785a-7057-4107-bfe5-9da4f4a67b54",
+    "name": "VerIngresos",
+    "commands": [{
+      "id": "a948d2f8-d1c4-43ab-a4bd-e52d0cd86470",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a50ebf6-ec20-4391-8006-07810ff22e49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7f7d4bb-5da2-4bcc-aea5-a85cf3b600f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mis Ingresos",
+      "targets": [
+        ["linkText=Mis Ingresos", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mis Ingresos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Ingresos')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mis Ingresos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "31ca6349-5dac-49c8-b130-d6e98e8904db",
+    "name": "VerGastos",
+    "commands": [{
+      "id": "db3353a2-09de-4543-9259-cdaf596dcded",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1170c41-cba6-4662-835e-4dc0357fdde3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c4e6a58-e43a-4ec0-b8b0-79f247b26025",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mis Gastos",
+      "targets": [
+        ["linkText=Mis Gastos", "linkText"],
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mis Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Gastos')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mis Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "57d9caa5-ace0-4a27-a559-adf88fedb8c8",
+    "name": "AgregarGastoSoles (1)",
+    "commands": [{
+      "id": "d8fefa07-2518-4565-9d3d-c7e17d920bac",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b97a5362-8a86-4e5a-83c0-cea901bfacb9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f43300f8-ee3f-40b3-a9a5-212d46758530",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Gasto",
+      "targets": [
+        ["linkText=Registrar Gasto", "linkText"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Gasto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Gastar')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Gasto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9659259f-a539-4985-9374-0ca78b5905d2",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77f20950-cd3b-4150-9176-1bd36f556e17",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=CARTERA"
+    }, {
+      "id": "d2abc69f-fbde-44d8-8ee3-9365399597ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0082e9e6-1519-442b-8eb6-527065f076f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "COMPRAMOS BICICLETA DE MONTAÑA"
+    }, {
+      "id": "a593d028-4592-4352-8eea-c859e39cfe72",
+      "comment": "",
+      "command": "type",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "2f965d2d-5709-43de-b5ef-f33c57284acf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a6c58f2e-b5db-42f3-8c2e-81310a0b5c10",
+    "name": "AgregarIngresoDolares (1)",
+    "commands": [{
+      "id": "088f1564-0640-4003-9efa-f5c92fd3e718",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01df8b52-d0aa-49ce-a5bc-6ddaf4e03257",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2f28166-bb1a-4e05-8dff-adbef7990634",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Ingreso",
+      "targets": [
+        ["linkText=Registrar Ingreso", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Ingreso')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Ingresar')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Ingreso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe76a28-c99e-4be4-a9d8-c80e17f7d88a",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ace8ff85-3c6f-4e25-bb1c-60127d5fc250",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=CREDITO BICICLETA"
+    }, {
+      "id": "016269c4-c486-4737-9f7d-1fe3730eb704",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0332477b-565e-4626-b5aa-4d0789476df5",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ABONO PARA PAGAR BICI"
+    }, {
+      "id": "04e1f3bc-df45-41bb-b5df-abb6b22b980b",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "350"
+    }, {
+      "id": "9dd454f9-6712-4610-ba32-4e599f9689d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "64f7837c-2ded-4b3d-8281-4c8f1654efd6",
+    "name": "AgregarIngresoSoles (1)",
+    "commands": [{
+      "id": "e3344c87-eb55-4584-8073-dfdba7b177b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c34b87e-664e-4501-b3d0-a29d14e436ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efc7b683-1110-4900-9a30-913aac365646",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrar Ingreso",
+      "targets": [
+        ["linkText=Registrar Ingreso", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrar Ingreso')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Ingresar')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrar Ingreso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce8535d4-3d8a-4238-9d8e-23c0da810114",
+      "comment": "",
+      "command": "click",
+      "target": "name=CuentaId",
+      "targets": [
+        ["name=CuentaId", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "660af986-9b8f-4c23-8d01-47e6d2b4464e",
+      "comment": "",
+      "command": "select",
+      "target": "name=CuentaId",
+      "targets": [],
+      "value": "label=CARTERA"
+    }, {
+      "id": "a4688cd6-c7c7-43e3-831f-c52da75cce71",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51861379-b635-4249-a3b2-48fa638f17b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AHORROS PARA BICI NUEVA"
+    }, {
+      "id": "7e7e63eb-20fd-4ed4-bde7-c91a807946ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "06653940-aef9-43d5-8dd0-893af9393f03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e9dae40-1f37-4b2f-a4cf-7c10845d8ee0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://localhost:44335/", "https://localhost:5001/"],
+  "plugins": []
+}

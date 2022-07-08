@@ -1,0 +1,31 @@
+﻿<h2>Lista de Gastos de la cuenta</h2>
+
+<a class="btn btn-danger" href="/Home/Index">Volver</a>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha y Hora</th>
+            <th>Descripcion</th>
+            <th>Monto</th>
+            <th>Cuenta Abonada</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var gasto in Model)
+        { int i =gasto.CuentaId;
+            <tr>
+                <td>@gasto.Fecha</td>
+                <td>@gasto.Descripcion</td>
+                <td>@gasto.Monto</td>
+                @foreach (var cuentas in ViewBag.cuenta)
+                {
+                    if (cuentas.Id == i)
+                    {
+                        <td>@cuentas.Nombre</td>
+                    }
+                }
+            </tr>
+}
+    </tbody>
+</table>

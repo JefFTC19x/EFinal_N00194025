@@ -1,0 +1,38 @@
+﻿<h2>CrearCuenta</h2>
+
+<form method="post" action="/Home/GuardarCuenta">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input name="Nombre" id="Nombre" class="form-control" />
+        @Html.ValidationMessage("Nombre")
+    </div>
+
+    <div class="form-group">
+        <label>Categoria</label>
+        <select name="Categoria" id="Categoria" class="form-control">
+            <option value="">--- Categoria de cuenta ---</option>
+            <option value="Propia">Propia</option>
+            <option value="Crédito">Crédito</option>
+
+        </select>
+        @Html.ValidationMessage("Categoria")
+    </div>
+    <div class="form-group">
+            <label>Moneda</label>
+            <select name="Moneda" id="Moneda" class="form-control">
+                <option value="">--- Moneda ---</option>
+                <option value="SOLES">Soles</option>
+                <option value="DOLARES">Dolares</option>
+    
+            </select>
+            @Html.ValidationMessage("Categoria")
+        </div>
+
+    <div class="form-group">
+        <label>Saldo a Favor o Limite de credito</label>
+        <input name="Saldo" id="SaldoInicial" class="form-control" />
+        @Html.ValidationMessage("SaldoInicial")
+    </div>
+
+    <button id="GuardarCuenta" class="btn btn-success">Guardar</button>
+</form>

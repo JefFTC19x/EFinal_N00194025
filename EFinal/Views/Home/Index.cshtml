@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "APP FINANCIERA";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Finanzas APP</h1>
+    @{
+            double gdolares =0, gsoles=0;
+        
+            @foreach (var gastos in ViewBag.gastado)
+            {
+                int i = gastos.CuentaId;
+                @foreach (var cuenta in Model)
+                {
+                    if (cuenta.Id.Equals(i) && cuenta.Moneda.Equals("SOLES"))
+                    {
+                        gsoles += gastos.Monto;
+                    }
+                    if (cuenta.Id.Equals(i) && cuenta.Moneda.Equals("DOLARES"))
+                    {
+                        gdolares += gastos.Monto;
+                    }
+                }
+            }
+            double idolares =0, isoles=0;
+        
+            @foreach (var ingreso in ViewBag.ingresado)
+            {
+                int i = ingreso.CuentaId;
+                @foreach (var cuenta in Model)
+                {
+                    if (cuenta.Id.Equals(i) && cuenta.Moneda.Equals("SOLES"))
+                    {
+                        isoles += ingreso.Monto;
+                    }
+                    if (cuenta.Id.Equals(i) && cuenta.Moneda.Equals("DOLARES"))
+                    {
+                        idolares += ingreso.Monto;
+                    }
+                }
+            }
+            
+            double tdolares =0, tsoles=0;
+        
+            @foreach (var cuenta in Model)
+            {
+                if (cuenta.Moneda.Equals("SOLES"))
+                {
+                    tsoles += cuenta.Saldo;
+                }
+                if (cuenta.Moneda.Equals("DOLARES"))
+                {
+                    tdolares += cuenta.Saldo;
+                }
+            }
+            double saldos= tsoles - gsoles + isoles;
+            double saldod= tdolares - gdolares + idolares;
+        }
+</div>
+
+@{
+    double t_cambio = 3.88;
+}
+<h2> TIPO DE CAMBIO DOLAR-SOL : @t_cambio</h2>
+<br/>
+<h2> Gastos totales Soles S/.: @gsoles</h2>
+<h2> Gastos totales Dolares $/: @gdolares</h2>
+<br/>
+<h2> Ingresos totales Soles S/.: @isoles</h2>
+<h2> Ingresos totales Dolares $/: @idolares</h2>
+<br/>
+<h2> Saldo en cuenta Soles S/.: @saldos</h2>
+<h2> Saldo en cuenta Dolares $/: @saldod</h2>
+<br/>
+@{ double rest = (t_cambio * saldos)+saldod; }
+<h2> Valor Total en Soles al tipo de cambio $/:@rest </h2>
+
+<div class="container">
+    <a class="btn btn-danger" href="/Home/Crear"> Crear Cuenta </a>
+    <a class="btn btn-primary" href="/Home/Ingresar"> Registrar Ingreso</a>
+    <a class="btn btn-primary" href="/Home/Gastar"> Registrar Gasto</a>
+    <a class="btn btn-success" href="/Home/Ingresos"> Mis Ingresos</a>
+    <a class="btn btn-success" href="/Home/Gastos"> Mis Gastos</a>
+
+    <hr />
+    <table class="table" id="TablaCuentas">
+        <thead>
+            <tr>
+                <th>Cuenta</th>
+                <th>Categoria</th>
+                <th>Moneda</th>
+                <th>Saldo</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cuenta in Model)
+            {
+                <tr>
+                    <td>@cuenta.Nombre</td>
+                    <td>@cuenta.Categoria</td>
+                    <td>@cuenta.Moneda</td>
+                    @if (cuenta.Moneda == "SOLES")
+                    {
+                        <td>S/. @cuenta.Saldo</td>
+                    }
+                    else
+                    {
+                        <td>$ @cuenta.Saldo</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

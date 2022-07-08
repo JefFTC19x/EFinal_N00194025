@@ -1,0 +1,37 @@
+﻿
+<h2>Lista de Ingresos</h2>
+
+
+<a class="btn btn-danger" href="/Home/Index">Volver</a>
+<hr />
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha y Hora</th>
+            <th>Descripcion</th>
+            <th>Monto</th>
+            <th>Cuenta Abonada</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ingreso in Model)
+        {
+            int i =ingreso.CuentaId;
+        <tr>
+            <td>@ingreso.Fecha</td>
+            <td>@ingreso.Descripcion</td>
+            <td>@ingreso.Monto</td>
+            @foreach (var cuentas in ViewBag.cuenta)
+            {
+                if (cuentas.Id == i)
+                {
+                    <td>@cuentas.Nombre</td>
+                }
+            }
+            
+        </tr>}
+    </tbody>
+</table>
